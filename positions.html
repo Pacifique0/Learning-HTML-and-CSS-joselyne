@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Card container styles */
+        .card{
+            width:300px;
+            height:400px;
+            background-color: rgb(25, 230, 196);
+            position: relative; /* Needed for absolute positioning of child elements */
+        }
+        /* Image styles inside card */
+        .card img{
+            width:100%;
+            height: 65%;
+            object-fit: cover; /* Ensures image covers the area */
+        }
+        /* Info section styles */
+        .info{
+            padding:10px;
+            text-align: center;
+            background-color: rgb(203, 124, 19);
+        }
+        /* Heading styles inside info */
+        .info h4{
+            margin:0;
+            padding:0;
+            font-size: 20px;
+        }
+        /* Button styles inside info */
+        .info button{
+            padding:10px 20px;
+            border:2px solid brown;
+            background-color: coral;
+            color:white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 100px;
+        }
+        /* Icon positioning styles */
+        .position-icon{
+            position:absolute; /* Absolutely positioned relative to .card */
+            top:0px;
+            right:0px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Card component -->
+    <div class="card">
+        <!-- Card image -->
+        <img src="https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg" alt="">
+        <!-- Info section inside card -->
+        <div class="info">
+            <h4>Wallpaper</h4>
+            <p>This is so amazing</p>
+            <button>View More</button>
+            <!-- Positioned icon in the top-right corner of the card -->
+            <i class="fa-solid fa-house position-icon"></i>
+        </div>
+    </div>
+</body>
